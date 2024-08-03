@@ -35,8 +35,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .logo {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
     font-size: 35px;
     line-height: 1.21;
     color: #28a745;
@@ -59,8 +57,6 @@ h1, h2, h3, h4, h5, h6, p {
 .header-item {}
 
 .header-list-link {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
     font-size: 18px;
     line-height: 1.56;
     color: #fff;
@@ -79,7 +75,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .hero-title {
-    font-family: "Open Sans", sans-serif;
     font-weight: 300;
     font-size: 55px;
     line-height: 1.2;
@@ -89,8 +84,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .hero-text {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
     font-size: 22px;
     line-height: 1.7;
     text-align: center;
@@ -100,8 +93,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 .hero-btn {
     display: block;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
     font-size: 18px;
     line-height: 1.56;
     text-align: center;
@@ -116,4 +107,54 @@ h1, h2, h3, h4, h5, h6, p {
 .hero-btn:hover,
 .hero-btn:focus {
     background-color: #39c75a;
+}
+
+
+/* Cases section */
+
+.cases-section {
+
+}
+
+.cases-div {
+    padding: 80px 28px;
+}
+
+.cases-text {
+    font-size: 20px;
+    line-height: 1.65;
+    text-align: center;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.cases-title {
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 1.26;
+    text-align: center;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.cases-description {
+    font-size: 18px;
+    line-height: 1.56;
+    text-align: center;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.cases-list {
+    display: flex;
+    row-gap: 24px;
+    column-gap: 21px;
+    flex-wrap: wrap;
+}
+
+.cases-item {
+    width: calc((100% - 21px * 3)/3);
+}
+
+.cases-img {
 }
