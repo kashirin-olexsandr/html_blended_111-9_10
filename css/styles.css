@@ -1,37 +1,49 @@
 body {
-    font-family: "Open Sans", san-serif;
+  font-family: "Open Sans", san-serif;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-ul, ol {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
 
 .container {
-    max-width: 1360px;
-    margin: 0 auto;
+  max-width: 1360px;
+  margin: 0 auto;
 }
 
 /* Header */
 
 .header {
-    background-color: #111;
+  background-color: #111;
 }
 
 .header-container {
-    display: flex;
-    align-items: center;
-    padding: 0 28px;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 0 28px;
+  justify-content: space-between;
 }
 
 .logo {
@@ -41,20 +53,22 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .logo-span {
-    color: #fff;
+  color: #fff;
 }
 
-.header-nav {}
+.header-nav {
+}
 
 .header-list {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    padding: 20px 0;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 20px 0;
+  cursor: pointer;
 }
 
-.header-item {}
+.header-item {
+}
 
 .header-list-link {
     font-size: 18px;
@@ -64,14 +78,14 @@ h1, h2, h3, h4, h5, h6, p {
 
 .header-list-link:hover,
 .header-list-link:focus {
-    color: #39c75a;
+  color: #39c75a;
 }
 
 /* Hero */
 
 .hero {
-    background-color: #111;
-    padding: 282px 0;
+  background-color: #111;
+  padding: 282px 0;
 }
 
 .hero-title {
@@ -92,22 +106,81 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .hero-btn {
-    display: block;
-    font-size: 18px;
-    line-height: 1.56;
-    text-align: center;
-    color: #fff;
-    padding: 10px 30px;
-    border-radius: 5px;
-    background-color: #28a745;
-    margin: 0 auto;
-    border: none;
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  text-align: center;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: #28a745;
+  margin: 0 auto;
+  border: none;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-    background-color: #39c75a;
+  background-color: #39c75a;
 }
+
+/*Section 1 About*/
+
+#about {
+    background: #28a745;
+}
+
+.about-container {
+    display: flex;
+}
+
+.about-img {
+  display: flex;
+  width: 670px;
+  height: 460px;
+}
+
+.about-text {
+    font-size: 20px;
+    line-height: 1.55;
+    color: #fff;
+    padding-bottom: 8px;
+}
+
+.about-title {
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 1.26;
+    color: #fff;
+    padding-bottom: 24px;
+}
+
+.about-content {
+    font-size: 18px;
+    line-height: 1.56;
+    color: #fff;
+    padding-bottom: 24px;
+}
+
+.about-button {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+
+    font-size: 18px;
+    line-height: 1.56;
+    color: #fff;
+    background: #28a745;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 11px 35px;
+}
+
+.content-container {
+    background: #28a745;
+    padding: 80px 64px 80px 20px;
+}
+
 
 
 /* Cases section */
@@ -156,5 +229,58 @@ h1, h2, h3, h4, h5, h6, p {
     width: calc((100% - 21px * 3)/3);
 }
 
-.cases-img {
+.cases-img {}
+/*Section 3 Blog*/
+
+#blog {
+  background: #0284d0;
+} 
+
+.blog-container {
+  display: flex;
+}
+
+.blog-content {
+  background: #0284d0;
+  padding: 80px 56px 80px 28px;
+}
+
+.blog-text {
+  font-size: 20px;
+  line-height: 1.65;
+  color: #fff;
+  padding-bottom: 8px;
+}
+
+.blog-title {
+  font-weight: 300;
+  font-size: 38px; 
+  line-height: 1.26;
+  color: #fff;
+  padding-bottom: 24px;
+}
+
+.blog-paragraph {
+  font-size: 18px;
+  line-height: 1.56;
+  color: #fff;
+  padding-bottom: 24px;
+}
+
+.blog-button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background: #0284d0;
+  padding: 10px 36px;
+}
+
+.blog-img {
+  display: flex;
+  width: 670px;
+  height: 460px;
 }
