@@ -47,11 +47,9 @@ img {
 }
 
 .logo {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 35px;
-  line-height: 1.21;
-  color: #28a745;
+    font-size: 35px;
+    line-height: 1.21;
+    color: #28a745;
 }
 
 .logo-span {
@@ -73,11 +71,9 @@ img {
 }
 
 .header-list-link {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-  color: #fff;
+    font-size: 18px;
+    line-height: 1.56;
+    color: #fff;
 }
 
 .header-list-link:hover,
@@ -93,23 +89,20 @@ img {
 }
 
 .hero-title {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  font-size: 55px;
-  line-height: 1.2;
-  text-align: center;
-  color: #e9e9e9;
-  margin-bottom: 24px;
+    font-weight: 300;
+    font-size: 55px;
+    line-height: 1.2;
+    text-align: center;
+    color: #e9e9e9;
+    margin-bottom: 24px;
 }
 
 .hero-text {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 1.7;
-  text-align: center;
-  color: #e9e9e9;
-  margin-bottom: 32px;
+    font-size: 22px;
+    line-height: 1.7;
+    text-align: center;
+    color: #e9e9e9;
+    margin-bottom: 32px;
 }
 
 .hero-btn {
@@ -173,6 +166,7 @@ img {
 .about-button {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
+
     font-size: 18px;
     line-height: 1.56;
     color: #fff;
@@ -187,6 +181,55 @@ img {
     padding: 80px 64px 80px 20px;
 }
 
+
+
+/* Cases section */
+
+.cases-section {
+
+}
+
+.cases-div {
+    padding: 80px 28px;
+}
+
+.cases-text {
+    font-size: 20px;
+    line-height: 1.65;
+    text-align: center;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.cases-title {
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 1.26;
+    text-align: center;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.cases-description {
+    font-size: 18px;
+    line-height: 1.56;
+    text-align: center;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.cases-list {
+    display: flex;
+    row-gap: 24px;
+    column-gap: 21px;
+    flex-wrap: wrap;
+}
+
+.cases-item {
+    width: calc((100% - 21px * 3)/3);
+}
+
+.cases-img {}
 /*Section 3 Blog*/
 
 #blog {
