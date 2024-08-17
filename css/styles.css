@@ -235,7 +235,7 @@ img {
 }
 
 .cases-item {
-    width: calc((100% - 21px * 3)/3);
+    width: calc((100% - 21px * 2) / 3);
 }
 
 .cases-img {}
