@@ -36,7 +36,10 @@ img {
 /* Header */
 
 .header {
-  background-color: #111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .header-container {
@@ -74,6 +77,7 @@ img {
     font-size: 18px;
     line-height: 1.56;
     color: #fff;
+    transition: color 250ms ease-in-out;
 }
 
 .header-list-link:hover,
@@ -84,8 +88,12 @@ img {
 /* Hero */
 
 .hero {
-  background-color: #111;
-  padding: 282px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),  rgba(0, 0, 0, 0.5)), url(../images/city.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #111;
+    padding: 282px 0;
 }
 
 .hero-title {
@@ -118,6 +126,7 @@ img {
   background-color: #28a745;
   margin: 0 auto;
   border: none;
+  transition: background-color 250ms ease-in-out;
 }
 
 .hero-btn:hover,
@@ -226,7 +235,7 @@ img {
 }
 
 .cases-item {
-    width: calc((100% - 21px * 3)/3);
+    width: calc((100% - 21px * 2) / 3);
 }
 
 .cases-img {}
