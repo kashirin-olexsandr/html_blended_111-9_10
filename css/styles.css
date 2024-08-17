@@ -343,19 +343,46 @@ img {
 }
 
 .team-svg {
-  fill: #000;
+  fill: #fff;
 }
 
-.team-wrapper {}
+.team-wrapper {
+    position: relative;
+}
 
 .team-img {}
 
 .team-ovwerlay {
-  background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 250ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.team-social-list {}
+.team-wrapper:hover .team-ovwerlay {
+    opacity: 1;
+}
+
+.social-link:hover .team-svg {
+    fill: #28a745;
+}
+
+.team-social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
 
 .team-social-item {}
 
-.team-svg {}
+.team-svg {
+    transition: fill 250ms ease-in-out;
+}
