@@ -252,8 +252,7 @@
         </ul>
       </div>
     </section>
-
-    <section>
+    <!-- <section>
       <img src="./images/man3.jpg" alt="Man with PC" width="670" />
       <div>
         <h2>Request Callback</h2>
@@ -262,6 +261,28 @@
           <input type="email" placeholder="Enter email*" />
           <button type="submit">Send</button>
         </form>
+      </div>
+    </section> -->
+    <section class="request">
+      <div class="container">
+        <div class="request-wrapper">
+          <picture class="request-picture">
+            <source srcset="./images/manform.jpg 1x, ./images/manform@2x.jpg 2x" media="(min-width: 1360px)" />
+            <img class="request-img" src="./images/manform.jpg" alt="Man with PC" width="670" />
+          </picture>
+          <div class="request-inner">
+            <div class="form-inner-box">
+              <h2 class="request-title">Request Callback</h2>
+              <form class="form">
+                <label class="form-label" for="user-mane"></label>
+                <input class="form-input" id="user-name" type="text" placeholder="Enter your name" />
+                <label class="form-label" for="email"></label>
+                <input class="form-input" id="email" type="email" placeholder="Enter email*" />
+              </form>
+              <button class="request-button" type="submit">Send</button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>

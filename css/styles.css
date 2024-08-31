@@ -59,7 +59,8 @@ img {
   color: #fff;
 }
 
-.header-nav {}
+.header-nav {
+}
 
 .header-list {
   display: flex;
@@ -69,7 +70,8 @@ img {
   cursor: pointer;
 }
 
-.header-item {}
+.header-item {
+}
 
 .header-list-link {
   font-size: 18px;
@@ -86,7 +88,8 @@ img {
 /* Hero */
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/city.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/city.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -193,11 +196,10 @@ img {
   padding: 80px 64px 80px 20px;
 }
 
-
-
 /* Cases section */
 
-.cases-section {}
+.cases-section {
+}
 
 .cases-div {
   padding: 80px 28px;
@@ -239,7 +241,8 @@ img {
   width: calc((100% - 21px * 2) / 3);
 }
 
-.cases-img {}
+.cases-img {
+}
 
 /*Section 3 Blog*/
 
@@ -340,7 +343,7 @@ img {
 }
 
 .team-item {
-  width: calc((100% - 20px * 2)/3);
+  width: calc((100% - 20px * 2) / 3);
 }
 
 .team-inner {
@@ -360,7 +363,8 @@ img {
   position: relative;
 }
 
-.team-img {}
+.team-img {
+}
 
 .team-ovwerlay {
   position: absolute;
@@ -391,10 +395,75 @@ img {
   gap: 25px;
 }
 
-.team-social-item {}
+.team-social-item {
+}
 
 .team-svg {
   transition: fill 250ms ease-in-out;
+}
+
+.request-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.request-inner {
+  background: #f4f4f4;
+}
+
+.request-title {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.27;
+  color: #333;
+  margin-bottom: 32px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.form-inner-box {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 28px 80px 20px;
+}
+
+.form-input {
+  min-height: 40px;
+  max-width: 620px;
+  border: none;
+  background-color: #fff;
+}
+
+.form-input:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.form-input::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  color: #808080;
+}
+
+.request-button {
+  font-weight: 400;
+  font-size: 18px;
+  width: 642px;
+  height: 42px;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #28a745;
+}
+
+.request-button:hover {
+  background-color: #39c75a;
 }
 
 .footer {
@@ -431,3 +500,4 @@ img {
   text-align: center;
   color: #fff;
 }
+
