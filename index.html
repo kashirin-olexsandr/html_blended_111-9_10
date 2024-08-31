@@ -18,7 +18,10 @@
 <body>
   <header class="header">
     <div class="header-container container">
-      <a class="logo" href="./index.html">Finance <span class="logo-span">Ledger</span></a>
+
+      <a class="logo" href="./index.html"><svg class="logo-icon" width="39" height="35">
+          <use href="./images/sprite.svg#icon-logo"></use>
+        </svg> Finance <span class="logo-span">Ledger</span></a>
       <nav -lass="header-nav">
         <ul class="header-list">
           <li class="header-item">
@@ -46,13 +49,21 @@
       <div class="container">
         <h1 class="hero-title">The Sky Is The Limit</h1>
         <p class="hero-text">We provide world class financial assistance</p>
-        <button class="hero-btn" type="button">Read More</button>
+        <button class="hero-btn" type="button"><svg class="hero-btn-icon" width="9" height="18">
+            <use href="./images/sprite.svg#icon-angle-right"></use>
+            </use>
+          </svg> Read More</button>
       </div>
     </section>
 
     <section id="about">
       <div class="container about-container">
-        <img class="about-img" src="./images/people.jpg" alt="People" width="670" />
+        <picture>
+          <source srcset="./images/people.jpg 1x, .//images/people@2x.jpg 2x" media="(min-width: 1360px)">
+          <source srcset="./images/people-tab.jpg 1x, ./images/people-tab@2x.jpg 2x" media="(min-width: 768px)">
+          <source srcset="./images/people-mob.jpg 1x, ./images/people-mob@2x.jpg 2x" media="(max-width: 320px)">
+          <img class="about-img" src="./images/people.jpg" alt="People" width="670" />
+        </picture>
         <div class="content-container">
           <p class="about-text">What you are looking for</p>
           <h2 class="about-title">We provide bespoke solutions</h2>
@@ -67,7 +78,7 @@
       </div>
     </section>
 
-    <section class="cases-section">
+    <!-- <section class="cases-section">
       <div class="container cases-div">
         <p class="cases-text">This is what we do</p>
         <h2 class="cases-title">Business Cases</h2>
@@ -96,9 +107,9 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
-    <section id="blog">
+    <!-- <section id="blog">
       <div class="container blog-container">
         <div class="blog-content">
           <p class="blog-text">April 16 2020</p>
@@ -113,8 +124,9 @@
         </div>
         <img class="blog-img" src="./images/blog.jpg" alt="Table with a note and cup" width="670" />
       </div>
-    </section>
-    <section class="team">
+    </section> -->
+
+    <!-- <section class="team">
       <div class="container">
         <p class="team-text">Who we are</p>
         <h2 class="team-title">Our Professional Team</h2>
@@ -252,7 +264,8 @@
         </ul>
       </div>
     </section>
-    <!-- <section>
+
+    <section>
       <img src="./images/man3.jpg" alt="Man with PC" width="670" />
       <div>
         <h2>Request Callback</h2>
@@ -262,63 +275,11 @@
           <button type="submit">Send</button>
         </form>
       </div>
-    </section> -->
-    <section class="request">
-      <div class="container">
-        <div class="request-wrapper">
-          <picture class="request-picture">
-            <source srcset="./images/manform.jpg 1x, ./images/manform@2x.jpg 2x" media="(min-width: 1360px)" />
-            <img class="request-img" src="./images/manform.jpg" alt="Man with PC" width="670" />
-          </picture>
-          <div class="request-inner">
-            <div class="form-inner-box">
-              <h2 class="request-title">Request Callback</h2>
-              <form class="form">
-                <label class="form-label" for="user-mane"></label>
-                <input class="form-input" id="user-name" type="text" placeholder="Enter your name" />
-                <label class="form-label" for="email"></label>
-                <input class="form-input" id="email" type="email" placeholder="Enter email*" />
-              </form>
-              <button class="request-button" type="submit">Send</button>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <ul class="footer-social-list">
-      <li class="footer-social-item">
-        <a href="#" class="social-link">
-          <svg class="footer-svg" width="35" height="35">
-            <use href="./images/sprite.svg#icon-facebook"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="footer-social-item">
-        <a href="#" class="social-link">
-          <svg class="footer-svg" width="35" height="35">
-            <use href="./images/sprite.svg#icon-twitter"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="footer-social-item">
-        <a href="#" class="social-link">
-          <svg class="footer-svg" width="35" height="35">
-            <use href="./images/sprite.svg#icon-youtube"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="footer-social-item">
-        <a href="#" class="social-link">
-          <svg class="footer-svg" width="35" height="35">
-            <use href="./images/sprite.svg#icon-linkedin"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-    <p class="footer-text">Copyright &copy; 2021 - FinanceLedger</p>
+  <footer>
+    <p>Copyright &copy; 2021 - FinanceLedger</p>
   </footer>
 </body>
 
