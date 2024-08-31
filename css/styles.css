@@ -505,6 +505,6 @@ img {
   }
 
   .about-title {
-    max-width: 100%;
+    max-width: unset;
   }
 }
