@@ -174,9 +174,6 @@ img {
 }
 
 .about-button {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-
   font-size: 18px;
   line-height: 1.56;
   color: #fff;
@@ -184,6 +181,14 @@ img {
   border: 1px solid #fff;
   border-radius: 5px;
   padding: 11px 35px;
+  cursor: pointer;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+.about-button:hover,
+.about-button:focus {
+  background-color: #fff;
+  color: #28a745;
 }
 
 .content-container {
@@ -277,8 +282,6 @@ img {
 }
 
 .blog-button {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
   color: #fff;
@@ -286,6 +289,13 @@ img {
   border-radius: 5px;
   background: #0284d0;
   padding: 10px 36px;
+  cursor: pointer;
+  transition: background-color 250ms ease-in-out;
+}
+
+.blog-button:hover,
+.blog-button:focus {
+  background-color: #28a745;
 }
 
 .blog-img {
@@ -455,3 +465,39 @@ img {
 .request-button:hover {
   background-color: #39c75a;
 }
+
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #333;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 6px;
+}
+
+.footer-social-item {}
+
+.social-link {}
+
+.footer-svg {
+  fill: #fff;
+  transition: fill 250ms ease-in-out;
+}
+
+.social-link:hover .footer-svg,
+.social-link:focus .footer-svg {
+  fill: #28a745;
+}
+
+.footer-text {
+  font-size: 18px;
+  line-height: 1.56;
+  text-align: center;
+  color: #fff;
+}
+
