@@ -29,7 +29,7 @@ img {
 }
 
 .container {
-  max-width: 1360px;
+  min-width: 320px;
   margin: 0 auto;
 }
 
@@ -405,10 +405,23 @@ img {
 .request-wrapper {
   display: flex;
   justify-content: center;
+
+  flex-direction: column;
+}
+
+.request-img {
+  width: 100%;
+  height: auto;
 }
 
 .request-inner {
   background: #f4f4f4;
+}
+
+.form-inner-box {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
 }
 
 .request-title {
@@ -422,18 +435,12 @@ img {
 .form {
   display: flex;
   flex-direction: column;
-  margin-bottom: 60px;
-}
-
-.form-inner-box {
-  display: flex;
-  flex-direction: column;
-  padding: 80px 28px 80px 20px;
+  margin-bottom: 40px;
 }
 
 .form-input {
   min-height: 40px;
-  max-width: 620px;
+  width: 100%;
   border: none;
   background-color: #fff;
 }
@@ -445,21 +452,23 @@ img {
 .form-input::placeholder {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
+  font-size: 16px;
+  line-height: 1.44;
   color: #808080;
 }
 
 .request-button {
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  width: 642px;
+  font-size: 16px;
+  width: 100%;
   height: 42px;
   text-align: center;
   border: none;
   border-radius: 4px;
   color: #fff;
   background-color: #28a745;
+  transition: cubic-bezier 0.3s, background-color 0.3s;
 }
 
 .request-button:hover {
@@ -480,9 +489,11 @@ img {
   margin-bottom: 6px;
 }
 
-.footer-social-item {}
+.footer-social-item {
+}
 
-.social-link {}
+.social-link {
+}
 
 .footer-svg {
   fill: #fff;
@@ -501,3 +512,65 @@ img {
   color: #fff;
 }
 
+/* #region section request adaptive */
+@media only screen and (min-width: 768px) {
+  .request {
+    padding-bottom: 40px;
+  }
+
+  .request-wrapper {
+    flex-direction: row;
+  }
+
+  .form-inner-box {
+    padding: 40px 32px;
+  }
+
+  .request-inner {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .form-input {
+    width: 100%;
+    max-width: 324px;
+  }
+
+  .form-input::placeholder {
+    font-size: 18px;
+    line-height: 1.28;
+  }
+
+  .request-button {
+    font-size: 18px;
+  }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1360px) {
+  .request {
+    padding: 0;
+  }
+
+  .form-inner-box {
+    padding: 80px 28px 80px 20px;
+  }
+
+  .request-inner {
+    max-width: 690px;
+  }
+
+  .form {
+    margin-bottom: 60px;
+  }
+
+  .form-input {
+    max-width: 620px;
+  }
+
+  .form-input::placeholder {
+    line-height: 1.57;
+  }
+}
+
+/* #endregion section request adaptive */
